@@ -10,7 +10,7 @@ function App() {
   const togglemode = () => {
     if(mode === 'light'){
       setMode('dark')
-      document.body.style.backgroundColor = 'black';
+      document.body.style.backgroundColor = '#171b2f';
     }
     else{
       setMode('light')
@@ -21,7 +21,7 @@ function App() {
     <>
   <Navbar title="TexttUtils2" mode={mode} togglemode = {togglemode} />
   <div className="container my-3">
-    <TextForm heading="Enter Your text here" />
+    <TextForm heading="Enter Your text here" mode={mode} />
   </div>
   {/* <AboutUs/> */}
     </>
